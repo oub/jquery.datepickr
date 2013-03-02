@@ -1,4 +1,4 @@
 jquery-datepickr
 ================
 
-Peek-a-date
+A jQuery datepicker plugin to "Peek-a-date"
