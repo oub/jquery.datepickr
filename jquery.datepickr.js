@@ -147,10 +147,3 @@
 
 
 } (jQuery));
-
-
-$(function () {
-
-	$('[name=date]').datepickr().focus();
-
-});

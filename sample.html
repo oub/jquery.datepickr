@@ -14,19 +14,18 @@
 	<link rel="stylesheet" href="jquery.datepickr.css"/>
 	<script src="jquery-1.9.1.min.js"></script>
 	<script src="jquery.datepickr.js"></script>
+	<script>
+
+		$(function () {
+
+			$('[name=date]').datepickr().focus();
+
+		});
+
+	</script>
 </head>
 <body>
-	<h1>Datepickr</h1>
-	<form a0utocomplete="off">
-		<p>
-			Nom : <input name="nom"/>
-		</p>
-		<p>
-			Date : <input name="date"/> <input name="date"/>
-		</p>
-		<p>
-			Nom : <input name="nom"/>
-		</p>
-	</form>
+	<h1>jQuery Datepickr</h1>
+	<p>Date : <input name="date"/> <input name="date"/></p>
 </body>
 </html>
