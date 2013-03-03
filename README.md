@@ -1,4 +1,4 @@
-jquery-datepickr
+jquery.datepickr
 ================
 
 A jQuery datepicker plugin
