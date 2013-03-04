@@ -1,3 +1,11 @@
+/*!
+JQuery Datepickr jquery.datepickr.js
+Copyright (c) 2013 Olivier Cuenot
+Dual licensed under the MIT license and GPL license.
+https://github.com/oub/jquery.datepickr/blob/master/MIT-license.txt
+https://github.com/oub/jquery.datepickr/blob/master/GPL-license.txt
+*/
+
 (function($) {
 
 	"use strict";
