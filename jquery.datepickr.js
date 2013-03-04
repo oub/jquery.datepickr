@@ -39,11 +39,11 @@ https://github.com/oub/jquery.datepickr/blob/master/GPL-license.txt
 		    todayDate = today.getDate(),
 		    firstWeekDay = date.getDay() === 0 ? 7 : date.getDay(),
 		    monthNumber = date.getMonth(),
-		    s = '';
-		s = '<div class="ui-datepickr-month">';
+		    s;
+		s  = '<div class="ui-datepickr-month">';
 		s += '<div class="ui-datepickr-month-header">';
-		s += '<a class="ui-datepickr-change-month ui-datepickr-next-month" data-month="' + nextMonth.getFullYear() + '-' + (nextMonth.getMonth() + 1) + '">❯</a>';
-		s += '<a class="ui-datepickr-change-month ui-datepickr-prev-month" data-month="' + prevMonth.getFullYear() + '-' + (prevMonth.getMonth() + 1) + '">❮</a>';
+		s += '<a class="ui-datepickr-change-month ui-datepickr-next-month" data-month="' + nextMonth.getFullYear() + '-' + (nextMonth.getMonth() + 1) + '"></a>';
+		s += '<a class="ui-datepickr-change-month ui-datepickr-prev-month" data-month="' + prevMonth.getFullYear() + '-' + (prevMonth.getMonth() + 1) + '"></a>';
 		s += months[date.getMonth()] + ' ' + date.getFullYear();
 		s += '</div>';
 		s += '<div class="ui-datepickr-week-days">';
@@ -74,7 +74,7 @@ https://github.com/oub/jquery.datepickr/blob/master/GPL-license.txt
 		return s;
 	};
 
-	$.fn.datepickr = function() {
+	$.fn.datepickr = function () {
 
 		return this
 		.addClass('has-datepickr')
@@ -149,8 +149,6 @@ https://github.com/oub/jquery.datepickr/blob/master/GPL-license.txt
 			// Restore the field state
 			$(this).data('datepickr', null).removeClass('datepickr-opened');
 		});
-
-		return this;
 	};
 
 

@@ -1,11 +1,23 @@
+@font-face {
+	font-family: datepickr;
+	src: url(fonts/datepickr.eot);
+	src: url(fonts/datepickr.eot?#iefix) format('embedded-opentype'),
+	     url(fonts/datepickr.woff) format('woff'),
+	     url(fonts/datepickr.ttf) format('truetype'),
+	     url(fonts/datepickr.svg#datepickr) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 .has-datepickr { background: url(calendar.png) 5px 50% no-repeat; padding-left: 25px; }
 
-.ui-datepickr { background: #FFF; border: 1px solid rgba(0, 0, 0, .2); border-radius: 4px; box-shadow: 0 2px 4px rgba(0, 0, 0, .2); position: absolute; -moz-transition: height 0.218s ease 0s; transition: height 0.218s ease 0s; z-index: 2000; }
-	.ui-datepickr:before { background: #EEE; border: solid #BBB; border-width: 1px 0 0 1px; content: ''; height: 10px; display: block; left: 0; margin: -6px auto 0; position: absolute; right: 0; -moz-transform: rotate(45deg); width: 10px; }
+.ui-datepickr { background: #FFF; border: 1px solid rgba(0, 0, 0, .2); border-radius: 4px; box-shadow: 0 2px 4px rgba(0, 0, 0, .2); position: absolute; z-index: 2; }
+	.ui-datepickr:before { background: #EEE; border: solid #BBB; border-width: 1px 0 0 1px; content: ''; height: 10px; display: block; left: 0; margin: -6px auto 0; position: absolute; right: 0; -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); width: 10px; }
 	.ui-datepickr-month { display: inline-block; }
-	.ui-datepickr-month-header { background: #EEE; border: solid 1px #BBB; border-radius: 4px 4px 0 0; color: #555; font-weight: bold; margin: -1px -1px 5px; padding: 10px; text-align: center; }
-	.ui-datepickr-change-month { cursor: pointer; font-size: 140%; margin: -3px -10px; padding: 0 10px; }
+	.ui-datepickr-month-header { background: #EEE; border: solid 1px #BBB; border-bottom-color: #DDD; border-radius: 4px 4px 0 0; color: #555; font-weight: bold; margin: -1px -1px 5px; padding: 11px 10px 10px; text-align: center; }
+	.ui-datepickr-change-month:before { cursor: pointer; display: block; font-family: datepickr; font-size: 140%; margin: -1px -10px; padding: 0 10px; -webkit-font-smoothing: antialiased; }
+	.ui-datepickr-prev-month:before { content: '\276e'; }
+	.ui-datepickr-next-month:before { content: '\276f'; }
 	.ui-datepickr-change-month:hover { color: #000; }
 	.ui-datepickr-prev-month { float: left; }
 	.ui-datepickr-next-month { float: right; }
@@ -19,6 +31,8 @@
 	.ui-datepickr-day-of-month.ui-datepickr-today {}
 	.ui-datepickr-day-of-month.s { color: dodgerblue; font-weight: bold; }
 
+/* blue theme */
 	.ui-datepickr.blue:before,
 	.ui-datepickr.blue .ui-datepickr-month-header { background-color: steelblue; border-color: #369; color: #FFF; text-shadow: 0 -1px #369; }
 	.ui-datepickr.blue .ui-datepickr-month-header { box-shadow: 0 -3px 7px #369 inset, 0 1px 0 #69C inset; }
+/**/
