@@ -1,7 +1,7 @@
 jquery.datepickr
 ================
 
-A jQuery datepicker plugin localized in French (more to come soon)
+A jQuery datepicker plugin.
 
 ![jQuery Datepickr in action](screenshot.png)
 
